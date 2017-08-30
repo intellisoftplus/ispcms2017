@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load staticfiles%}
+
+
+{% block content %}
+
+	<!-- We are -->
+	<div class="we-are">
+		<div class="container">
+			<h2 class="h2s dark">{% placeholder "part 1 title" %}</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="we-are-img-cont">
+						<div class="we-are-img fam">
+							<div class="we-are-text">
+								<h3>{% placeholder "part 1 card 1 title" %}</h3>
+								<p>{% placeholder "part 1 card 1 content" %}</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-sm-6">
+					<div class="we-are-img-cont">
+						<div class="we-are-img african">
+							<div class="we-are-text">
+								<h3>{% placeholder "part 1 card 2 title" %}</h3>
+								<p>{% placeholder "part 1 card 2 content" %}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="row two">
+				<div class="col-sm-6">
+					<div class="we-are-img-cont">
+						<div class="we-are-img moon">
+							<div class="we-are-text">
+								<h3>{% placeholder "part 1 card 3 title" %}</h3>
+								<p>{% placeholder "part 1 card 3 content" %}<p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="we-are-img-cont">
+						<div class="we-are-img trans">
+							<div class="we-are-text">
+								<h3>{% placeholder "part 1 card 4 title" %}</h3>
+								<p>{% placeholder "part 1 card 4 content" %}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>					
+
+	<div class="inspired">
+		<div class="container">
+			<h2 class="h2s dark">{% placeholder "part 2 title" %}</h2>
+				<div class="row no-gutters">
+					<div class="col-sm-4 inspired-card">
+						<h3>{% placeholder "part 2 card 1 title" %}</h3>
+						<p>{% placeholder "part 2 card 1 content" %}</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="inspired-pics">
+							{% placeholder "part 2 card 2 image" %}
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="inspired-pics">
+							{% placeholder "part 2 card 3 image" %}
+						</div>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-sm-4">
+						<div class="inspired-pics istan">
+							{% placeholder "part 2 card 4 image" %}
+						</div>
+					</div>
+					<div class="col-sm-4 inspired-card">
+						<h3>{% placeholder "part 5 card 5 title" %}</h3>
+						<p>{% placeholder "part 5 card 5 content " %}</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="inspired-pics istan">
+							{% placeholder "part 2 card 6 image" %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock content %}

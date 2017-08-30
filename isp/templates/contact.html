@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load staticfiles%}
+
+
+{% block content %}
+
+	<!-- Contacts Information -->
+	<div class="contacts-information">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="contacts-msg">	
+						<div class="contacts-heading">
+							<h3>{% placeholder "message card title" %}</h3>
+						</div>	
+						<form class="form"method="POST" action="/sales/contactus/" role="form" >
+							{% csrf_token %}
+							<div class="form-group">
+								<input class="form-control" type="text" name="name" placeholder="Your Name" required>
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="email" name="email" placeholder="Your Email" required>
+							</div>	
+							<div class="form-group">
+								<textarea class="form-control" rows="5" name="message" placeholder="Your Message" required></textarea>
+							</div>
+							<p id="checktick"></p>
+							<div class="form-group">
+								<button type="submit" id="send" disabled class="pull-right">
+									<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+								</button>
+								<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LenkyETAAAAAGRvmA39Xjye7edarLsd9EyPwE2A"></div>
+							</div>
+						</form>
+					</div>
+				</div>	
+
+				<div class="col-sm-4">
+					<div class="contacts-info">
+						<div class="contacts-details">
+							<ul>
+								<div class="ci-heading">
+									<h3 >Contact Information</h3>
+								</div>
+								<h3><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h3>
+								<li>Lowerhill Duplex, Suite 18</li>
+								<li>Upperhill Road, Upperhill</li>
+								<li>Nairobi, Kenya</li>
+							</ul>
+						</div>
+
+						<div class="contacts-details">
+							<ul>
+								<h3><i class="fa fa-phone" aria-hidden="true">
+								</i> Support:</h3>
+								<li>+254 20 6009998</li>
+								<h3><i class="fa fa-phone" aria-hidden="true"></i> Enquiries:</h3>
+								<li>+254 20 6009999</li>
+							</ul>
+						</div>
+
+						<div class="contacts-details">
+							<ul>
+								<h3><i class="fa fa-envelope" aria-hidden="true">
+								</i> Emails</h3>
+								<li>info@intellisoftplus.com</li>
+								<li>support@intellisoftplus.com</li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+
+				<div class="row maps">
+
+					<div class="col-sm-12">
+						<h2 class="h2s dark">{% placeholder "location" %}</h2>
+						<!--scrollwheel should be disabled-->
+						<div>{% placeholder "map" %}</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Map -->
+
+
+	{% endblock content %}

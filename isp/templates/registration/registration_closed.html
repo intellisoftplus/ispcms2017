@@ -1,0 +1,11 @@
+{% extends "basereg.html" %}
+{% load i18n %}
+{% block title %} Registration closed {% endblock title %}
+{% block content %}
+  {% include 'navbar.html' %}
+<div class="container">
+  <div class="row">
+	<p>{% trans "Registration is currently closed." %}</p>
+  </div>
+</div>
+{% endblock %}

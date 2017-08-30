@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load staticfiles%}
+
+
+{% block content %}
+
+	<!-- Services -->
+	<div class="services">
+		<div class="container">
+			<h2 class="h2s dark">{% placeholder "page heading" %}</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-card">
+						<div class="services-heading">
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+							<h3> {% placeholder "card 1 title" %} </h3>
+						</div>
+						<div class="services-content">
+							<p>{% placeholder "card 1 content" %}</p>
+						</div>	
+					</div>
+				</div>	
+
+				<div class="col-sm-4">
+					<div class="services-card">
+						<div class="services-heading">
+							<i class="fa fa-road" aria-hidden="true"></i>
+							<h3> {% placeholder "card 2 title" %} </h3>
+						</div>
+						<div class="services-content">
+							<p>{% placeholder "card 2 content " %}</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="services-card">
+						<div class="services-heading">
+							<i class="fa fa-truck" aria-hidden="true"></i>
+							<h3> {% placeholder "card 3 title" %} </h3>
+						</div>
+						<div class="services-content">
+							<p>{% placeholder "card 3 content" %}</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+	
+
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-card">
+						<div class="services-heading">
+							<i class="fa fa-wrench" aria-hidden="true"></i>
+							<h3>{% placeholder "card 4 title" %}</h3>
+						</div>
+						<div class="services-content">
+							<p>{% placeholder "card 4 content" %}</p>
+						</div>	
+					</div>
+				</div>	
+
+				<div class="col-sm-4">
+					<div class="services-card">
+						<div class="services-heading">
+							<i class="fa fa-laptop" aria-hidden="true"></i>
+							<h3>{% placeholder "card 5 title" %}</h3>
+						</div>
+						<div class="services-content">
+							<p>{% placeholder "card 5 content" %}</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="services-card">
+						<div class="services-heading">
+							<i class="fa fa-server" aria-hidden="true"></i>
+							<h3>{% placeholder "card 6 title" %}</h3>
+						</div>
+						<div class="services-server">
+							<p>{% placeholder "card 6 content" %}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+	{% endblock content %}

@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load staticfiles%}
+
+
+{% block content %}
+
+<!--
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+-->
+
+	<!-- Commited -->
+	<div class="committed">
+		<div class="container">
+			<h2 class="h2s" style="color:#3A4A4D">{% placeholder "determined" %}</h2>
+			<p>{% placeholder "determinedsubtext" %}</p>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="comm-cards comm-body">
+						<h3>{% placeholder "determinedcard1heading" %} </h3>
+						<p> {% placeholder "determinedcard1txt" %}</p>
+						<button class="btn btn-lg btn-default">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="comm-cards comm-body">
+						<h3>{% placeholder "determinedcard2heading" %}</h3>
+						<p> {% placeholder "determinedcard2txt" %}</p>
+						<button class="btn btn-lg btn-default">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="comm-cards comm-body">
+						<h3>{% placeholder "determinedcard3heading" %}</h3>
+						<p>{% placeholder "determinedcard3txt" %}</p>
+						<button class="btn btn-lg btn-default">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Help -->
+	<div class="help">
+		<div class="container">
+			<h2 class="h2s">{% placeholder "help heading" %}</h2>
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="help-sec">
+						<div class="help-icon">
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<p>{% placeholder "helptxt11" %}</p>
+							<p>{% placeholder "helptxt12" %}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="help-sec">
+						<div class="help-icon">
+							<i class="fa fa-road" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<p>{% placeholder "helptxt21" %}</p>
+							<p>{% placeholder "helptxt22" %}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="help-sec">
+						<div class="help-icon">
+							<i class="fa fa-truck" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<p>{% placeholder "helptxt31" %}</p>
+							<p>{% placeholder "helptxt32" %}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="help-sec">
+						<div class="help-icon">
+							<i class="fa fa-wrench" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<p>{% placeholder "helptxt41" %}</p>
+							<p>{% placeholder "helptxt42" %}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="help-sec">
+						<div class="help-icon">
+							<i class="fa fa-laptop" aria-hidden="true"></i>
+						</div>
+						<div class="help-text">
+							<p>{% placeholder "helptxt51" %}</p>
+							<p>{% placeholder "helptxt52" %}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Partners -->
+	<div class="partners">
+		<div class="container">
+			<h2 class="h2s">{% placeholder "strategic partners" %}</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					{% placeholder "strategic partner1" %}
+					<p>{% placeholder "strategic partner1 txt" %}</p>
+					<button class="btn btn-lg btn-default">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+				</div>
+				<div class="col-sm-6">
+					{% placeholder "strategic partner2" %}
+					<p>{% placeholder "strategic partner2 txt" %}</p>
+					<button class="btn btn-lg btn-default">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h2 class="h2s" style="color:#3A4A4D">{% placeholder "Testimonial" %}</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="testi-card">
+						<div class="testi-pic">
+							{% placeholder "Testimonial 1 image 1" %}
+						</div>
+						<div class="testi-text">
+							<h4>{% placeholder "Testimonial1" %}</h4>
+							<blockquote>{% placeholder "Testimonialtxt" %}</blockquote>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="testi-card">
+						<div class="testi-pic">
+							{% placeholder "Testimonial 2 image 2" %}
+						</div>
+						<div class="testi-text">
+							<h4>{% placeholder "Testimonial2" %}</h4>
+							<blockquote>{% placeholder "Testimonial2txt" %}</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Customers -->
+	<div class="customers">
+		<div class="container">
+			<h2 class="h2s">{% placeholder "Customers" %}</h2>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="logo-card one">
+						<div class="logo">
+							{% placeholder "logo-card one" %}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="logo-card two">
+						<div class="logo">
+							{% placeholder "logo-card two" %}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="logo-card three">
+						<div class="logo">
+							{% placeholder "logo-card three" %}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="logo-card four">
+						<div class="logo">
+							{% placeholder "logo-card four" %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="logo-card one">
+						<div class="logo">
+							{% placeholder "logo-card five" %}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="logo-card two">
+						<div class="logo">
+							{% placeholder "logo-card six" %}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="logo-card three">
+						<div class="logo">
+							{% placeholder "logo-card seven" %}
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="logo-card four">
+						<div class="logo">
+							{% placeholder "logo-card eight" %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- contacts -->
+	<div class="contacts">
+		<div class="container">
+			<h2 class="h2s">{% placeholder "contacts" %}</h2>
+			<div class="row">
+				<div class="contacts-btn">
+					<a href="/contacts/"><button class="btn btn-lg btn-default">Contact Us
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button> </a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="contacts-social">
+				<div class="row">
+					<a href="https://www.facebook.com/Intellisoftplus-194103337276735/" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a href="https://twitter.com/Intellisoftplus" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a href="https://youtu.be/LW2q2uBV75g" target="_blank">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NewsLetter -->
+	<div class="newsletter">
+		<div class="container">
+			<h2 class="h2s">{% placeholder "Get Our Latest News" %}</h2>
+			<p>{% placeholder "Sign up for all our latest news" %}</p>
+			<div class="newsletter-form">
+				<form class="form-inline" method="POST" action="/sales/subscribe/" role="form">
+					{% csrf_token %}
+					<div class="form-group">
+						<input type="email" name="email" class="form-control" placeholder="Email" required>
+					</div>
+					<button class="btn btn-default btn-lg" type="submit">Subscribe<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}

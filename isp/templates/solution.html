@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load staticfiles%}
+
+
+		{% block content %}
+
+		<!-- Solutions -->
+
+	<div class="solutions">
+		<div class="container">
+			<h2 class="h2s">{% placeholder "heading 1" %}</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="sol-bgimg">
+						<div class="sol-heading">
+							<h3>{% placeholder "card 1 title" %}</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+							<div class="sol-content">
+								{% placeholder "card 1 image" %}
+								<p>{% placeholder "card 1 content" %}</p>
+							</div>
+						</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+							<div class="sol-content sol-cont-right">
+								<i class="fa fa-building" aria-hidden="true"></i>
+								<p>{% placeholder "card 2 title" %}</p>
+							</div>
+						</div>
+
+				<div class="col-sm-6">
+					<div class="sol-bgimg sol-bgimg-right">
+						<div class="sol-heading">
+							<h3>{% placeholder "card 2 content" %}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row sol-left">
+				<div class="col-sm-6">
+					<div class="sol-bgimg sol-bgimg-left">
+						<div class="sol-heading">
+							<h3>{% placeholder "card 3 title" %}</h3>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+							<div class="sol-content sol-cont-left">
+								<i class="fa fa-cloud" aria-hidden="true"></i>
+								<p>{% placeholder "card 3 content" %}</p>
+							</div>
+						</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-6">
+					<div class="sol-content sol-cont-right">
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+						<p>{% placeholder "card 4 title" %}</p>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="sol-bgimg sol-bgimg-right">
+						<div class="sol-heading">
+							<h3>{% placeholder "card 4 content" %}</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 sol-bgimg-left">
+					<div class="sol-bgimg">
+						<div class="sol-heading">
+							<h3>{% placeholder "card 5 title" %}</h3>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+							<div class="sol-content sol-cont-left">
+								<i class="fa fa-mobile" aria-hidden="true"></i>
+								<p>{% placeholder "card 5 content" %}</p>
+							</div>
+						</div>
+			</div>
+
+		</div>
+	</div>
+
+		<!-- End Solutions -->
+
+		{% endblock content %}

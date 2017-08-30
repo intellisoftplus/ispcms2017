@@ -1,0 +1,26 @@
+{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
+
+
+    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0 aldryn-newsblog aldryn-newsblog-sidebar">
+
+        <div>
+
+            <br/><br/>
+            <h3>RECENT POSTS</h3>
+            <div>
+                {% for article in article_list %}
+                    <p><a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}</a></p>
+                {% empty %}
+                    <p class="well">{% trans "No items available" %}</p>
+                {% endfor %}
+            </div>
+
+            {% static_placeholder "newsblog_sidebar" %}
+            {% block newsblog_sidebar %}{% endblock %}
+
+
+        </div>
+
+
+
+    </div>

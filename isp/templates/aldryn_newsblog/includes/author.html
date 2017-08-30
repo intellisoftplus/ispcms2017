@@ -1,0 +1,15 @@
+{% load i18n staticfiles thumbnail apphooks_config_tags %}
+
+<div class="aldryn-newsblog-meta">
+    {% if author and author.slug %}
+        <div class="meta">
+            <a href="{% namespace_url "article-list-by-author" author.slug namespace=namespace default='' %}">
+                <i class="fa fa-user" aria-hidden="true"></i> {{ author.name }}</a>
+
+
+            <i class="fa fa-calendar-o pull-right" aria-hidden="true"> {{ article.publishing_date|date }} </i>
+
+        </div>
+    <br/>
+    {% endif %}
+</div>
