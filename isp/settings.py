@@ -162,18 +162,18 @@ INSTALLED_APPS = (
     'crispy_forms',
     'isp',
 
-    'cmsplugin_css_background',
-    'aldryn_boilerplates',
-    'aldryn_apphooks_config',
-    'aldryn_categories',
-    'aldryn_common',
-    'aldryn_newsblog',
-    'aldryn_people',
-    'aldryn_reversion',
-    'aldryn_translation_tools',
-    'parler',
-    'sortedm2m',
-    'taggit',
+    # 'cmsplugin_css_background',
+    # 'aldryn_boilerplates',
+    # 'aldryn_apphooks_config',
+    # 'aldryn_categories',
+    # 'aldryn_common',
+    # 'aldryn_newsblog',
+    # 'aldryn_people',
+    # 'aldryn_reversion',
+    # 'aldryn_translation_tools',
+    # 'parler',
+    # 'sortedm2m',
+    # 'taggit',
 
 )
 
@@ -239,11 +239,11 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': 'ec2-54-235-119-29.compute-1.amazonaws.com',
-        'NAME': 'dpf624h726tnu',
-        'PASSWORD': '-SOHFji8gfgLzrOJRHeFf0El3I',
+        'HOST': 'ec2-54-247-175-255.eu-west-1.compute.amazonaws.com',
+        'NAME': 'ddv7m3leqnr3uv',
+        'PASSWORD': '8f49c3d36cb70e4b1e5840bea568eb810399445534df147fc15773622d918b4d',
         'PORT': '5432',
-        'USER': 'byzyhmtpuxzllx',
+        'USER': 'rllkwgpkyibomg',
     }
 }
 
