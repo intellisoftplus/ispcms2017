@@ -38,7 +38,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'jay-a-pocdb(6tu9)%$^p=rue7zuk5c8%8-aj%&lxd22=7+u#3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -48,7 +48,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER  = 'abungaphares@gmail.com'
 EMAIL_HOST_PASSWORD = 'rggfcbgttvijille'
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False
 
 # Application definition
 
