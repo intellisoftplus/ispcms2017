@@ -38,7 +38,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'jay-a-pocdb(6tu9)%$^p=rue7zuk5c8%8-aj%&lxd22=7+u#3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
