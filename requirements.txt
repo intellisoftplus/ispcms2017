@@ -60,3 +60,4 @@ texttable==0.8.4
 tzlocal==1.2.2
 Unidecode==0.4.19
 YURL==0.13
+python-decouple==3.1

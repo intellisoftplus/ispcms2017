@@ -1,4 +1,5 @@
-import os
+import os, dj_database_url
+from decouple import config
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
@@ -38,7 +39,6 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'jay-a-pocdb(6tu9)%$^p=rue7zuk5c8%8-aj%&lxd22=7+u#3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -223,29 +223,21 @@ CMS_PLACEHOLDER_CONF = {
 
 DISABLE_COLLECTSTATIC=1
 
-'''
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'HOST': '',
+#         'NAME': '',
+#         'PASSWORD': '',
+#         'PORT': '',
+#         'USER': '',
+#     }
+# }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': 'localhost',
-        'NAME': 'cmsdb2',
-        'PASSWORD': 'ph4re5',
-        'PORT': '5432',
-        'USER': 'phares',
-    }
-}
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': 'ec2-54-247-175-255.eu-west-1.compute.amazonaws.com',
-        'NAME': 'ddv7m3leqnr3uv',
-        'PASSWORD': '8f49c3d36cb70e4b1e5840bea568eb810399445534df147fc15773622d918b4d',
-        'PORT': '5432',
-        'USER': 'rllkwgpkyibomg',
-    }
-}
+db_link = config('DATABASE_URL', os.environ.get("DATABASE_URL", ""))  # os.environ.get("DATABASE_URL", "")
+DATABASES = {'default': dj_database_url.config(default=db_link)}
+
+DEBUG = config('DEBUG', os.environ.get("DEBUG", False), cast=bool)
 
 
 MIGRATION_MODULES = {
